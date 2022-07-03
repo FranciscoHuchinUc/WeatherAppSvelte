@@ -16,7 +16,7 @@ export async function get (event) {
   const data = await response.json()
 
   const { location, current } = data
-  const { name, localtime, country } = location
+  const { name, region, localtime, country } = location
   const { condition, humidity, feelslike_c, temp_c, wind_kph, wind_dir, is_day } = current
   const { text, icon } = condition
 
@@ -26,6 +26,7 @@ export async function get (event) {
     country,
     localtime,
     locationName: name,
+    locationRegion: region,
     humidity,
     isDay: is_day,
     feelsLike: feelslike_c,
