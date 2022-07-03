@@ -4,11 +4,4 @@
 	export let text;
 </script>
 
-<img src={icon} alt={text} />
-
-<style>
-	img {
-		width: 100px;
-		max-width: 100%;
-	}
-</style>
+<img src={icon} alt={text} class="w-28 max-w-full justify-items-center mt-8 ml-auto mr-auto" />

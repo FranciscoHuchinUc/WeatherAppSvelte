@@ -1,37 +1,22 @@
-<footer>
+<script>
+	export let humidity;
+	export let windSpeed;
+	export let feelsLike;
+</script>
+
+<footer
+	class="absolute left-4 right-4 bottom-2 flex justify-around text-center px-3 py-2 rounded-xl border-2 border-gray-500"
+>
 	<div>
-		<span>33%</span>
-		<strong>Humidity</strong>
+		<span class="block">{humidity}%</span>
+		<strong class="text-gray-700 font-semibold">Humidity</strong>
 	</div>
 	<div>
-		<span>12 Km/h</span>
-		<strong>Wind Speed</strong>
+		<span class="block">{windSpeed} Km/h</span>
+		<strong class="text-gray-700 font-semibold">Wind Speed</strong>
 	</div>
 	<div>
-		<span>12°</span>
-		<strong>Feels Like</strong>
+		<span class="block">{feelsLike}°</span>
+		<strong class="text-gray-700 font-semibold">Feels Like</strong>
 	</div>
 </footer>
-
-<style>
-	footer {
-		border: 2px solid #000;
-		padding: 12px 16px;
-		margin: 0 auto;
-		border-radius: 10px;
-		display: flex;
-		text-align: center;
-		justify-content: space-around;
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 32px;
-	}
-	span {
-		display: block;
-	}
-	strong {
-		color: #444;
-		font-weight: 600;
-	}
-</style>
