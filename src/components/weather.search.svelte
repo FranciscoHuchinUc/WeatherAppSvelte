@@ -16,6 +16,6 @@
 		type="text"
 		name="city"
 		placeholder="Enter city name"
-		class="w-full p-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-2 focus:border-gray-300"
+		class="w-full bg-transparent text-white px-5 py-2 outline-none rounded-xl border border-[#404855]"
 	/>
 </form>

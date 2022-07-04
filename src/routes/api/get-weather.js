@@ -18,10 +18,10 @@ export async function get (event) {
   const { location, current } = data
   const { name, region, localtime, country } = location
   const { condition, humidity, feelslike_c, temp_c, wind_kph, wind_dir, is_day } = current
-  const { text, icon } = condition
+  const { text, code } = condition
 
   const body = {
-    conditionIcon: icon,
+    conditionCode: code,
     conditionText: text,
     country,
     localtime,

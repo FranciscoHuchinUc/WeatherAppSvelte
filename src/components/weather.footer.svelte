@@ -5,18 +5,18 @@
 </script>
 
 <footer
-	class="absolute left-4 right-4 bottom-2 flex justify-around text-center px-3 py-2 rounded-xl border-2 border-gray-500"
+	class="bg-[#1E2126] absolute left-4 right-4 bottom-6 flex justify-around text-center px-6 py-3 rounded-xl"
 >
 	<div>
-		<span class="block">{humidity}%</span>
-		<strong class="text-gray-700 font-semibold">Humidity</strong>
+		<span class="block font-bold text-white">{humidity}%</span>
+		<strong class="text-white font-normal text-sm">Humidity</strong>
+	</div>
+	<div class="border-l-2 border-r-2 px-6 border-[#2B2F36]">
+		<span class="block font-bold text-white">{windSpeed} Km/h</span>
+		<strong class="text-white font-normal text-sm">Wind Speed</strong>
 	</div>
 	<div>
-		<span class="block">{windSpeed} Km/h</span>
-		<strong class="text-gray-700 font-semibold">Wind Speed</strong>
-	</div>
-	<div>
-		<span class="block">{feelsLike}°</span>
-		<strong class="text-gray-700 font-semibold">Feels Like</strong>
+		<span class="block font-bold text-white">{feelsLike}°</span>
+		<strong class="text-white font-normal text-sm">Feels Like</strong>
 	</div>
 </footer>
