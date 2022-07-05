@@ -4,6 +4,6 @@
 	export let text;
 </script>
 
-<div class="w-44 max-w-full flex mx-auto mt-6 bg-cover">
-	<img src={`/icon/${icon}.png`} alt={text} class="w-full" />
+<div class="w-44 h-36 max-w-full flex mx-auto mt-6">
+	<img src={`/icon/${icon}.png`} alt={text} class="object-contain" />
 </div>
