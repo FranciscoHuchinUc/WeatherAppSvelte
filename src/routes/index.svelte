@@ -14,6 +14,11 @@
 	});
 </script>
 
+<svelte:head>
+	<!-- elements go here -->
+	<title>Weather App</title>
+</svelte:head>
+
 {#await weatherPromise then weather}
 	<WeatherSearch />
 	<WeatherContent {weather} />
